@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		72D78C8A21EA19180061335D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 72D78C8921EA19180061335D /* main.c */; };
 		72D78C9221EA192F0061335D /* Sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 72D78C9121EA192F0061335D /* Sort.c */; };
+		7F836FCB2211113500CF263F /* QSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F836FCA2211113500CF263F /* QSort.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		72D78C8921EA19180061335D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		72D78C9021EA192F0061335D /* Sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
 		72D78C9121EA192F0061335D /* Sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Sort.c; sourceTree = "<group>"; };
+		7F836FC92211113500CF263F /* QSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSort.h; sourceTree = "<group>"; };
+		7F836FCA2211113500CF263F /* QSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QSort.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				72D78C8921EA19180061335D /* main.c */,
 				72D78C9021EA192F0061335D /* Sort.h */,
 				72D78C9121EA192F0061335D /* Sort.c */,
+				7F836FC92211113500CF263F /* QSort.h */,
+				7F836FCA2211113500CF263F /* QSort.c */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F836FCB2211113500CF263F /* QSort.c in Sources */,
 				72D78C8A21EA19180061335D /* main.c in Sources */,
 				72D78C9221EA192F0061335D /* Sort.c in Sources */,
 			);
