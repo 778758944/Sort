@@ -26,4 +26,24 @@ void SelectSort(sqList * l);
 void InsertSort(sqList * l);
 void ShellSort(sqList * l);
 
+void BubbleSort3(int *arr, int len);
+void InsertSort2(int *arr, int len);
+
+void QSort2(int * arr, int len);
+
+void BubbleSort5(int *arr, int len);
+void InsertSort3(int *arr, int len);
+
+void QSort3(int * arr, int len);
+
+void BubbleSort6(int * arr, int len);
+void InsertSort5(int * arr, int len);
+
+void QSort5(int * arr, int len);
+
+void BubbleSort7(int * arr, int len);
+void InsertSort6(int * arr, int len);
+void QSort6(int * arr, int len);
+void QSort7(int * arr, int len);
+
 #endif /* Sort_h */

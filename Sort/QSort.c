@@ -13,10 +13,13 @@ void assign(void * a, void * b, size_t size);
 
 void sort(void * arr, void * low, void * high, size_t size, int (*comp)(const void *, const void *));
 
+void insert(void * arr, size_t nitems, size_t size, int (*comp) (const void *, const void *));
+
 void QSort(void * arr, size_t nitems, size_t size, int (*comp)(const void *, const void *)) {
     void * high = arr + (nitems - 1) * size;
     void * low = arr;
     sort(arr, low, high, size, comp);
+//    insert(arr, nitems, size, comp);
 }
 
 
@@ -54,5 +57,22 @@ void assign(void * a, void * b, size_t size) {
     int i = 0;
     for (; i < size; i++) {
         *(_a + i) = *(_b + i);
+    }
+}
+
+void insert(void * arr, size_t nitems, size_t size, int (*comp) (const void *, const void *)) {
+    int i, j;
+    for (i = 1; i < nitems; i++) {
+        void * cur = arr + (i * size);
+        void * before = arr + (i - 1) * size;
+        
+        if (comp(before, cur) > 0) {
+            void * temp = calloc(1, size);
+            assign(temp, cur, size);
+            for (j = i - 1; j >= 0 && comp(arr + j * size, temp) > 0; j--) {
+                assign(arr + (j + 1) * size, arr + j * size, size);
+            }
+            assign(arr + (j + 1) * size, temp, size);
+        }
     }
 }
